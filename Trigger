@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Trigger1 : MonoBehaviour
+{
+    public GameObject TrampaCubo;
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            TrampaCubo.SetActive(false);
+        }
+    }
+}
